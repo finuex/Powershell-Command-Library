@@ -4,4 +4,4 @@ Get-ChildItem -Path "C:\Your\Target\Directory" -Recurse | ForEach-Object {
         Path  = $_.FullName
         Depth = $depth
     }
-} | Sort-Object -Property Depth | Export-Csv -Path "C:\Path\To\Output\File.csv" -NoTypeInformation
+} | Sort-Object -Property Depth | Export-Csv -Path "C:\Path\To\Output\File.csv" -NoTypeInformation -Delimiter ';'
